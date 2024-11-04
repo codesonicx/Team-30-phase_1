@@ -1,4 +1,4 @@
 [core]
-    remote = local_remote
-['remote "local_remote"']
-    url = /Users/code_/Documents/Demo1/local_storage
+    remote = dvcremote
+['remote "dvcremote"']
+    url = C:\Users\code_\Documents

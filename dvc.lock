@@ -59,8 +59,8 @@ stages:
       size: 24017
     - path: src/train.py
       hash: md5
-      md5: c8f9c98b7f1d3a6f37e0135aa741b8f8
-      size: 1343
+      md5: 823ab906fed051e9f9bcb892e1939e82
+      size: 1759
     outs:
     - path: models/logistic_regression_model.pkl
       hash: md5
@@ -80,13 +80,13 @@ stages:
       size: 24017
     - path: src/train.py
       hash: md5
-      md5: c8f9c98b7f1d3a6f37e0135aa741b8f8
-      size: 1343
+      md5: 823ab906fed051e9f9bcb892e1939e82
+      size: 1759
     outs:
     - path: models/random_forest_model.pkl
       hash: md5
-      md5: 84af1963263bb64f76783559d32d0f68
-      size: 617001
+      md5: b66bc28a73c2ad2996872876c94fbd63
+      size: 592521
   evaluate_logistic:
     cmd: python src/evaluate.py models/logistic_regression_model.pkl data/processed/X_test.csv
       data/processed/y_test.csv reports/logistic_evaluation.txt
@@ -105,13 +105,14 @@ stages:
       size: 1359
     - path: src/evaluate.py
       hash: md5
-      md5: 6ffa6a2565b680865caa2f2c610e3ebe
-      size: 1076
+      md5: cc34cdf1aadc258bb4e87e9e882354e8
+      size: 2264
     outs:
     - path: reports/logistic_evaluation.txt
       hash: md5
-      md5: 698389061460a4250e404587af548f19
-      size: 406
+      md5: ea64779112f9954fdb69e3a59ef45023.dir
+      size: 404
+      nfiles: 2
   evaluate_random_forest:
     cmd: python src/evaluate.py models/random_forest_model.pkl data/processed/X_test.csv
       data/processed/y_test.csv reports/random_forest_evaluation.txt
@@ -126,14 +127,15 @@ stages:
       size: 6017
     - path: models/random_forest_model.pkl
       hash: md5
-      md5: 84af1963263bb64f76783559d32d0f68
-      size: 617001
+      md5: b66bc28a73c2ad2996872876c94fbd63
+      size: 592521
     - path: src/evaluate.py
       hash: md5
-      md5: 6ffa6a2565b680865caa2f2c610e3ebe
-      size: 1076
+      md5: cc34cdf1aadc258bb4e87e9e882354e8
+      size: 2264
     outs:
     - path: reports/random_forest_evaluation.txt
       hash: md5
-      md5: 698389061460a4250e404587af548f19
-      size: 406
+      md5: ea64779112f9954fdb69e3a59ef45023.dir
+      size: 404
+      nfiles: 2

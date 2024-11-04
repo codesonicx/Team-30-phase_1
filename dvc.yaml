@@ -37,7 +37,7 @@ stages:
       - models/random_forest_model.pkl
 
   evaluate_logistic:
-    cmd: python src/evaluate.py models/logistic_regression_model.pkl data/processed/X_test.csv data/processed/y_test.csv reports/logistic_evaluation.txt
+    cmd: python src/evaluate.py models/logistic_regression_model.pkl data/processed/X_test.csv data/processed/y_test.csv reports/logistic_evaluation.txt runids/logistic_regression.txt
     deps:
       - src/evaluate.py
       - models/logistic_regression_model.pkl
@@ -48,7 +48,7 @@ stages:
 
 
   evaluate_random_forest:
-    cmd: python src/evaluate.py models/random_forest_model.pkl data/processed/X_test.csv data/processed/y_test.csv reports/random_forest_evaluation.txt
+    cmd: python src/evaluate.py models/random_forest_model.pkl data/processed/X_test.csv data/processed/y_test.csv reports/random_forest_evaluation.txt runids/random_forest.txt
     deps:
       - src/evaluate.py
       - models/random_forest_model.pkl
@@ -56,3 +56,14 @@ stages:
       - data/processed/y_test.csv
     outs:
       - reports/random_forest_evaluation.txt
+
+  test_pipeline:
+    cmd: pytest tests/ > reports/tests_output.txt
+    deps:
+      - tests/test_load_data.py
+      - tests/test_preprocess_data.py
+      - tests/test_train.py
+      - tests/test_evaluate.py
+    outs:
+      - reports/tests_output.txt
+
