@@ -1,10 +1,13 @@
-# phase_1.0.0
+# README phase_1.0.0 - Gobernanza del Modelo de Machine Learning para Predicción de Fallos de Maquinaria
 
 <a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-Phase 1 of predictive maintenance and setup of all tools and libraries for the project to be more scalable and maintainable.
+Phase 3 of predictive maintenance and setup of all tools and libraries for the project to be more scalable and maintainable.
+
+## Descripción del Proyecto
+Este proyecto utiliza técnicas de machine learning para predecir fallos en maquinaria industrial. El objetivo es identificar patrones y señales tempranas de fallos para realizar mantenimientos preventivos y reducir el tiempo de inactividad.
 
 ## Project Organization
 
@@ -57,16 +60,63 @@ Phase 1 of predictive maintenance and setup of all tools and libraries for the p
     └── plots.py                <- Code to create visualizations
 ```
 
-## First Steps
+- **data/**: Contiene los conjuntos de datos utilizados para entrenar y evaluar el modelo.
+- **notebooks/**: Jupyter notebooks con el análisis exploratorio de datos (EDA) y el desarrollo del modelo.
+- **src/**: Código fuente del modelo y scripts de preprocesamiento de datos.
+- **models/**: Modelos entrenados y sus versiones.
+- **reports/**: Informes y visualizaciones de resultados.
+- **docs/**: Documentación del proyecto.
 
-### 1. Install Python 3.11.9
+## Requisitos
+- Python 3.11
+- Bibliotecas: requirements.txt
+
+## Instalación
+
+0. Install Python 3.11.9
    Ensure that you have Python 3.11.9 installed on your machine. You can download it from [python.org](https://www.python.org/downloads/).
 
-### 2. Activate the Virtual Environment (Windows PowerShell)
-   After navigating to your project directory, activate the virtual environment using PowerShell:
-   ```powershell
-   .\scripts\activate.ps1
+1. Clonar el repositorio (Windows PowerShell):
+   git clone https://github.com/ferchooz4/Team-30-phase_1 
 
+2. Navegar al directorio del proyecto:
+    cd Team-30-phase_1
+
+3. Activar el Virtual Environment 
+   .env\Scripts\Activate.ps1
+
+4. Instalar las dependencias:
+    pip install -r requirements.txt
+
+5. Uso (por separado)
+    Cargar los datos:
+    python src/load_data.py
+    
+    Preprocesar los datos:
+    python src/preprocess_data.py
+
+    Entrenar el modelo:
+    python src/train.py
+
+    Evaluar el modelo:
+    python src/evaluate.py
+
+6. Uso (pipline)
+    dvc repro
+
+## Gobernanza del Modelo
+
+### Transparencia y Trazabilidad
+Registro de Datos: Todos los conjuntos de datos utilizados están documentados en docs/
+Versionado de Modelos: Cada versión del modelo se almacena en el directorio models/ 
+
+### Evaluación y Documentación
+Métricas de Rendimiento: Las métricas de evaluación del modelo se documentan en reports/
+Se utilizan herramientas GIT, DVC, MLFlow para el versionado de código, datos y modelos.
+
+### Monitoreo y Mantenimiento
+Monitoreo en Producción: Se implementan scripts para monitorear el rendimiento del modelo en producción y detectar posibles degradaciones.
+Actualización del Modelo: Procedimientos para reentrenar y actualizar el modelo con nuevos datos se documentan en docs/
 
 --------
 
