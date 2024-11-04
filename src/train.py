@@ -25,16 +25,19 @@ def train_model(X_train_path, y_train_path, model_type):
     elif model_type == 'random_forest':
         model = RandomForestClassifier(**model_params)
 
-    mlflow.set_experiment(params['mlflow']['experiment_name'])
     mlflow.set_tracking_uri(params['mlflow']['tracking_uri'])
+    experiment_name = params['mlflow']['experiment_name']
+
+    # Check and create the experiment if it doesn't exist
+    if not mlflow.get_experiment_by_name(experiment_name):
+        mlflow.create_experiment(experiment_name)
+    
+    mlflow.set_experiment(experiment_name)
 
     with mlflow.start_run() as run:
-
-        
         tags = params['mlflow'].get('tags', {})
         tags['model_type'] = model
         mlflow.set_tags(tags)
-
 
         model.fit(X_train, y_train)
         mlflow.log_params(model_params)
