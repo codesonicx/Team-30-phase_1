@@ -1,4 +1,11 @@
 /virtual-env-phase_1/
+
+# Ignorar todo el contenido de la carpeta mlruns
+mlruns/*
+
+# Excluir la carpeta 0 y models para que no se ignoren
+!mlruns/0/
+!mlruns/models/
 # Mac OS-specific storage files
 .DS_Store
 
