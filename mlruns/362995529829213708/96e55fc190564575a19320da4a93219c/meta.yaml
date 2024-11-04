@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Dev/Python%20Projects/MLOps/Team-30-phase_1/mlruns/362995529829213708/96e55fc190564575a19320da4a93219c/artifacts
+end_time: 1729480816383
+entry_point_name: ''
+experiment_id: '362995529829213708'
+lifecycle_stage: active
+run_id: 96e55fc190564575a19320da4a93219c
+run_name: capricious-jay-704
+run_uuid: 96e55fc190564575a19320da4a93219c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729480816328
+status: 3
+tags: []
+user_id: code_

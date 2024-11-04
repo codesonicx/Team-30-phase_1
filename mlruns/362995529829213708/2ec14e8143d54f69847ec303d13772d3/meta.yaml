@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Dev/Python%20Projects/MLOps/Team-30-phase_1/mlruns/362995529829213708/2ec14e8143d54f69847ec303d13772d3/artifacts
+end_time: 1729479898518
+entry_point_name: ''
+experiment_id: '362995529829213708'
+lifecycle_stage: active
+run_id: 2ec14e8143d54f69847ec303d13772d3
+run_name: dapper-hog-613
+run_uuid: 2ec14e8143d54f69847ec303d13772d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729479898463
+status: 4
+tags: []
+user_id: code_

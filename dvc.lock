@@ -159,5 +159,5 @@ stages:
     outs:
     - path: reports/tests_output.txt
       hash: md5
-      md5: 55ad20f3ee56de921273b317bcc26d61
+      md5: ecffc21d8581908bdee8953f14f1aafa
       size: 693

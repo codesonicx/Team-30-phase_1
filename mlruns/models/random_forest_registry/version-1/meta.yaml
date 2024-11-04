@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1729480813026
+current_stage: None
+description: ''
+last_updated_timestamp: 1729480813026
+name: random_forest_registry
+run_id: 26fd5f8b8f0444b1b6c4704596f5fe99
+run_link: ''
+source: file:///D:/Dev/Python%20Projects/MLOps/phase_1.0/mlruns/994522926505138160/26fd5f8b8f0444b1b6c4704596f5fe99/artifacts/random_forest_model
+status: READY
+status_message: null
+storage_location: file:///D:/Dev/Python%20Projects/MLOps/phase_1.0/mlruns/994522926505138160/26fd5f8b8f0444b1b6c4704596f5fe99/artifacts/random_forest_model
+user_id: null
+version: 1

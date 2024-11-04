@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Dev/Python%20Projects/MLOps/Team-30-phase_1/mlruns/265524508347785084/fd7e53c270244953a176d0bf26e2db5d/artifacts
+end_time: 1730693989128
+entry_point_name: ''
+experiment_id: '265524508347785084'
+lifecycle_stage: active
+run_id: fd7e53c270244953a176d0bf26e2db5d
+run_name: placid-ray-565
+run_uuid: fd7e53c270244953a176d0bf26e2db5d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730693972269
+status: 3
+tags: []
+user_id: code_

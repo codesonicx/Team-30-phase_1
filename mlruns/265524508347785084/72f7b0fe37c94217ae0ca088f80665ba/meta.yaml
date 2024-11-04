@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Dev/Python%20Projects/MLOps/Team-30-phase_1/mlruns/265524508347785084/72f7b0fe37c94217ae0ca088f80665ba/artifacts
+end_time: 1730688055322
+entry_point_name: ''
+experiment_id: '265524508347785084'
+lifecycle_stage: active
+run_id: 72f7b0fe37c94217ae0ca088f80665ba
+run_name: charming-ox-599
+run_uuid: 72f7b0fe37c94217ae0ca088f80665ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730688040278
+status: 3
+tags: []
+user_id: code_

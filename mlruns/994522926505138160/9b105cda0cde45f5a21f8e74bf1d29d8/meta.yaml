@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Dev/Python%20Projects/MLOps/phase_1.0/mlruns/994522926505138160/9b105cda0cde45f5a21f8e74bf1d29d8/artifacts
+end_time: 1729479895230
+entry_point_name: ''
+experiment_id: '994522926505138160'
+lifecycle_stage: active
+run_id: 9b105cda0cde45f5a21f8e74bf1d29d8
+run_name: rebellious-roo-793
+run_uuid: 9b105cda0cde45f5a21f8e74bf1d29d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729479890964
+status: 3
+tags: []
+user_id: code_

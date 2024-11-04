@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Dev/Python%20Projects/MLOps/Team-30-phase_1/mlruns/265524508347785084/24ac24e139a34e6284d3a75b5d162a7c/artifacts
+end_time: 1730688057790
+entry_point_name: ''
+experiment_id: '265524508347785084'
+lifecycle_stage: active
+run_id: 24ac24e139a34e6284d3a75b5d162a7c
+run_name: melodic-goat-488
+run_uuid: 24ac24e139a34e6284d3a75b5d162a7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730688048991
+status: 3
+tags: []
+user_id: code_

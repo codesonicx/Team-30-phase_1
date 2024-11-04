@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1729480803071
+current_stage: None
+description: ''
+last_updated_timestamp: 1729480803071
+name: logistic_regression_registry
+run_id: e5eee69351644ebe978aaf6686e358bb
+run_link: ''
+source: file:///D:/Dev/Python%20Projects/MLOps/phase_1.0/mlruns/994522926505138160/e5eee69351644ebe978aaf6686e358bb/artifacts/logistic_regression_model
+status: READY
+status_message: null
+storage_location: file:///D:/Dev/Python%20Projects/MLOps/phase_1.0/mlruns/994522926505138160/e5eee69351644ebe978aaf6686e358bb/artifacts/logistic_regression_model
+user_id: null
+version: 1
