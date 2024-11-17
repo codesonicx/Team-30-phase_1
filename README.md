@@ -118,5 +118,47 @@ Se utilizan herramientas GIT, DVC, MLFlow para el versionado de código, datos y
 Monitoreo en Producción: Se implementan scripts para monitorear el rendimiento del modelo en producción y detectar posibles degradaciones.
 Actualización del Modelo: Procedimientos para reentrenar y actualizar el modelo con nuevos datos se documentan en docs/
 
+## Roles y responsabilidades
+
+### Line of Business y Subject Matter Expert
+**Responsable:** Jorge Mariles Estrada
+- Definir el impacto de la problemática del negocio.
+- Entender los datos capturados y su relevancia para el negocio.
+- Colaborar con el equipo técnico para asegurar que las soluciones propuestas se alineen con los objetivos del negocio.
+- Proveer contexto y conocimiento especializado sobre el dominio del problema.
+
+### Data Scientist
+**Responsable:** Jose Luis Artigas Arroyo
+- Preparar y explorar los datos disponibles.
+- Realizar análisis exploratorio de datos (EDA) para identificar patrones y relaciones.
+- Seleccionar y crear características relevantes para el modelo.
+- Desarrollar y evaluar modelos de machine learning.
+- Documentar y comunicar los hallazgos y resultados del análisis de datos.
+
+### ML Architect 1
+**Responsable:** Antonio Olvera Donlucas
+- Diseñar y mejorar el modelo de machine learning.
+- Seleccionar algoritmos y técnicas adecuadas para el problema.
+- Optimizar el rendimiento del modelo mediante ajuste de hiperparámetros.
+- Implementar técnicas de validación cruzada y evaluación del modelo.
+- Asegurar la escalabilidad y eficiencia del modelo en producción.
+
+### ML Architect 2
+**Responsable:** Jorge Antonio Acosta Rosales
+- Refactorizar el código del modelo para mejorar su eficiencia y mantenibilidad.
+- Implementar buenas prácticas de codificación y diseño de software.
+- Asegurar la modularidad y reutilización del código.
+- Colaborar con el equipo de data engineering para integrar el modelo en el pipeline de datos.
+- Realizar pruebas unitarias y de integración para asegurar la calidad del código.
+
+### Data Engineer
+**Responsable:** Fernando Jaime Sánchez
+- Diseñar y construir pipelines de datos eficientes y escalables.
+- Implementar procesos de extracción, transformación y carga (ETL) de datos.
+- Gestionar el versionado de datos y asegurar la reproducibilidad de los experimentos.
+- Colaborar con los científicos de datos y arquitectos de ML para asegurar la disponibilidad y calidad de los datos.
+- Monitorear y mantener los pipelines de datos en producción.
+
+
 --------
 

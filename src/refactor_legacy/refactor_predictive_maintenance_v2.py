@@ -80,6 +80,7 @@ class PredictiveMaintenanceModel:
     
     def train_model(self):
         self.model_pipeline.fit(self.X_train, self.y_train)
+        print(self.model_pipeline.named_steps['classifier'].n_features_in_)
         return self
     
     def evaluate_model(self):
@@ -109,7 +110,7 @@ class PredictiveMaintenanceModel:
         pass
 
 def main():
-    filepath = r'D:\Dev\Python Projects\MLOps\phase_1.0\data\raw\ai4i2020.csv'
+    filepath = r'D:\Dev\Python Projects\MLOps\Team-30-phase_1\data\raw\ai4i2020.csv'
     model = PredictiveMaintenanceModel(filepath)
     model.load_data()
     model.preprocess_data()
